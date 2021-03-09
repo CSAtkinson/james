@@ -1,0 +1,13 @@
+.Toolbar {
+    height: 56px;
+    width: 100%;   
+    text-align: center;
+    background-color: turquoise;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 {
+    margin:0;
+    padding: 0;
+}
