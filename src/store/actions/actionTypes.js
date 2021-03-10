@@ -1,0 +1,2 @@
+export const CHANGE_TURN = 'CHANGE_TURN'
+export const POP_GAMEBOARD = 'POP_GAMEBOARD'
