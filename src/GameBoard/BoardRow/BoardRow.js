@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import GameButton from './GameButton/GameButton'
 
 
 
 
-const BoardRow = (props) => {    
-    
-
-    
+const BoardRow = (props) => {  
     return (
         <div>
             <GameButton />
