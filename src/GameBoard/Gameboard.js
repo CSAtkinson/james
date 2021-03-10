@@ -5,31 +5,11 @@ import BoardRow from './BoardRow/BoardRow'
 
 
 const GameBoard = () => {
-
-    const [playerTurn, setPlayerTurn] = useState(1);
-    const [playerSymbol, setPlayerSymbol] = useState();   
-     
-
-    const changeTurn = (turn, symbol) => {
-        setPlayerTurn(turn)
-        setPlayerSymbol(symbol)
-    }
-    
-    
         return(
             <div className={classes.Gameboard}>
-                <BoardRow 
-                    turn={playerTurn}
-                    change={changeTurn}                
-                />
-                <BoardRow                    
-                    turn={playerTurn}
-                    change={changeTurn}                   
-                />
-                <BoardRow               
-                    turn={playerTurn}
-                    change={changeTurn}
-                />
+                <BoardRow />
+                <BoardRow />
+                <BoardRow />
             </div>
         ) 
     

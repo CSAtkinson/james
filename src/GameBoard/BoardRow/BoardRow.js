@@ -10,9 +10,9 @@ const BoardRow = (props) => {
     
     return (
         <div>
-            <GameButton turn={props.turn} />
-            <GameButton turn={props.turn} />
-            <GameButton turn={props.turn} />            
+            <GameButton />
+            <GameButton />
+            <GameButton />            
         </div>
     )
     
