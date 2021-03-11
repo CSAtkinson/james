@@ -1,19 +1,18 @@
-import React from 'react'
-import GameButton from './GameButton/GameButton'
+// import React from 'react'
+// //import GameButton from '../GameButton'
 
 
 
 
-const BoardRow = (props) => {  
-    return (
-        <div>
-            <GameButton />
-            <GameButton />
-            <GameButton />            
-        </div>
-    )
+// const BoardRow = (props) => {  
+//     return (
+//         <div>
+//             <GameButton />
+//             <GameButton />
+//             <GameButton />            
+//         </div>
+//     )
     
-};
-export default BoardRow
+// };
+// export default BoardRow
 
-//

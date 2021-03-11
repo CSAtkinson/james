@@ -5,3 +5,11 @@
     text-align: center;
     font-weight: bold;
 }
+
+.Button{    
+    height: 200px;
+    width: 200px;
+    background-color: White;
+    vertical-align: top;
+}
+
