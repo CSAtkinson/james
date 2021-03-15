@@ -1,6 +1,6 @@
 .Gameboard {
     display: inline-block; 
-    width: 33%;
+    width: 33%.3;
     height: 653px;
     padding-top: 50px;
     font-weight: bold;
@@ -23,7 +23,7 @@
 
 .emptyDiv{
     display: inline-block;
-    width: 33%;
+    width: 33.3%;
 }
 
 
