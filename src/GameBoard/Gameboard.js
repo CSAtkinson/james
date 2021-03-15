@@ -1,54 +1,50 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { useEffect, useState } from 'react'
 import classes from './Gameboard.module.css'
-import BoardRow from './BoardRow/BoardRow'
-import * as actionTypes from '../store/actions/actionTypes'
 
- 
+
+
 
 
 const GameBoard = (props) => {
-  
+   
+    const tester = new Array(3).fill(0).map(() => new Array(3).fill(0))
+    const populate = () => {         
+        let num = 0;
+        for(var i = 0; i < 3; i++){
+            for (var j = 0; j <3; j++){
+                tester[i][j] = <button key={num} onClick={()=> setSymbol("O")} className={classes.Button}>X</button>
+                num++
+            }
+        }        
+    }
+
+    const [symbol, setSymbol] = useState("X");
+    const [turn, setTurn] = useState(1)
+    const [button, setButton] = useState([])
+    populate();
+    console.log(tester)
+
+    
     
 
-    // const populate = Object.keys(props.gameBoard[i][j])
-    // .map(gameKey => {
-    //     return( 
-    //         <button onClick={changeSymbol} className={classes.Button}>{state.symbol}</button>
-    //     );
-    //  });
+    // useEffect(() => {
+        
+    // }, [])
 
-    
-    return(
-        <div className={classes.Gameboard}>
-            <button onClick={props.onTurn} className={classes.Button}>{props.symbol}</button>
+    return(        
+        <div className={classes.outerDiv}>
+            <div className={classes.emptyDiv}></div>
+            <div className={classes.emptyDiv}>
+            {tester}
+            </div>            
+            <div className={classes.emptyDiv}></div>
         </div>
     ) 
 }
 
-    
+
+export default GameBoard
 
 
-const mapStateToProps = state => {
-    return{
-        turn: state.playerTurn,
-        symbol: state.playerSymbol,
-        gameBoard: state.gameBoard
-    }
-}
-
-const mapDispatchToProps = dispatch => {
-    return{
-        onTurn: () => dispatch({type: actionTypes.CHANGE_TURN}),
-        onSymbolChange: () => dispatch({type: actionTypes.CHANGE_SYMBOL}),
-        populate: () => dispatch({type: actionTypes.POP_GAMEBOARD})
-    }
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(GameBoard)
-
-
-
-
+//
 

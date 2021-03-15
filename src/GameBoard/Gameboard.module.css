@@ -1,15 +1,30 @@
 .Gameboard {
-    width: 100%;
+    display: inline-block; 
+    width: 33%;
     height: 653px;
     padding-top: 50px;
-    text-align: center;
     font-weight: bold;
 }
 
-.Button{    
-    height: 200px;
-    width: 200px;
+.Button{
+    display: inline-block;
+    height: 33.3%;
+    width: 33%;
     background-color: White;
-    vertical-align: top;
+    
 }
+
+.outerDiv{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+}
+
+.emptyDiv{
+    display: inline-block;
+    width: 33%;
+}
+
+
 

@@ -1,3 +1,0 @@
-export const CHANGE_TURN = 'CHANGE_TURN'
-export const CHANGE_SYMBOL = 'CHANGE_SYMBOL'
-export const POP_GAMEBOARD = 'POP_GAMEBOARD'
