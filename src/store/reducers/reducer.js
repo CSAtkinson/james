@@ -6,6 +6,14 @@ const initialState = {
     playerSymbol: 'X'
 }
 
+const changeSymbol = (data) => {            
+    console.log('Global State Turn ' + props.turn)
+    console.log('Global State Symbol ' + props.symbol)                          
+    props.onTurn();
+    props.onSymbolChange();
+    console.log(props.turn + ' ' + props.symbol)
+}
+
 
 
 
@@ -26,6 +34,7 @@ const changeSymbol = (data) => {
     if(data === 'O'){
         return data = 'X'
     }
+    return data;
 }
 
 const reducer = (state = initialState, action) => {

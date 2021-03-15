@@ -7,49 +7,27 @@ import * as actionTypes from '../store/actions/actionTypes'
  
 
 
-class GameBoard  extends Component{
-
-    componentDidMount(){
-        //this.populateGameBoard()
-    }
-
-    // populateGameBoard(){
-    //     let num = 0;
-    //     for (var i = 0; i < 3; i++){
-    //         for(var j = 0; j < 3; j++){
-    //             this.props.gameBoard[i][j] = num;
-    //             num++
-    //         }
-    //     }
-    // }
-
-
-    render(){
-        
-        const changeSymbol = () => {            
-            console.log('Global State Turn ' + this.props.turn)
-            console.log('Global State Symbol ' + this.props.symbol)                          
-            this.props.onTurn();
-            this.props.onSymbolChange();
-            console.log(this.props.turn + ' ' + this.props.symbol)
-        }
-
-        // const populate = Object.keys(this.props.gameBoard[i][j])
-        // .map(gameKey => {
-        //     return( 
-        //         <button onClick={changeSymbol} className={classes.Button}>{this.state.symbol}</button>
-        //     );
-        //  });
-
-        
-        return(
-            <div className={classes.Gameboard}>
-                <button onClick={() => this.props.onTurn()} className={classes.Button}>{this.props.symbol}</button>
-            </div>
-        ) 
-    }
+const GameBoard = (props) => {
+  
     
-};
+
+    // const populate = Object.keys(props.gameBoard[i][j])
+    // .map(gameKey => {
+    //     return( 
+    //         <button onClick={changeSymbol} className={classes.Button}>{state.symbol}</button>
+    //     );
+    //  });
+
+    
+    return(
+        <div className={classes.Gameboard}>
+            <button onClick={props.onTurn} className={classes.Button}>{props.symbol}</button>
+        </div>
+    ) 
+}
+
+    
+
 
 const mapStateToProps = state => {
     return{
