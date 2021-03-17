@@ -1,24 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from './Gameboard.module.css'
-import TttButton from './GameButton'
+import GameButton from './GameButton'
 
-const GameBoard = (props) => { 
+const GameBoard = ({gameButtons, onClick}) => ( 
     
-
-    const symbolChange = () => {
-
-    }
-    
-    
-
-    return(        
-        <div className={classes.outerDiv}>
+        <div>
             <div className={classes.emptyDiv}></div>
-            <TttButton click={symbolChange}/>            
+            <div className={classes.emptyDiv}>
+            {gameButtons.map((gameButton, i) => (
+                <GameButton key={i} value={gameButton} onClick={()=> onClick(i)} />
+            ))}           
+            </div>
             <div className={classes.emptyDiv}></div>
+            
         </div>
-    ) 
-}
+        
+)
 
 
 export default GameBoard

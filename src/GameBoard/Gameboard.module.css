@@ -4,6 +4,8 @@
     height: 653px;
     padding-top: 50px;
     font-weight: bold;
+    padding: 0px;
+    margin: 0px; 
 }
 
 .Button{
@@ -11,7 +13,9 @@
     height: 33.3%;
     width: 33%;
     background-color: White;
-    
+    padding: 0px;
+    margin: 0px; 
+    vertical-align: middle;   
 }
 
 .outerDiv{
@@ -19,11 +23,16 @@
     display: flex;
     flex-direction: row;
     height: 360px;
+    padding: 0px;
+    margin: 0px; 
 }
 
 .emptyDiv{
     display: inline-block;
     width: 33.3%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px; 
 }
 
 
