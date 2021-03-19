@@ -6,7 +6,7 @@ const GameBoard = ({gameButtons, onClick, turn, winner}) => {
     let turnWinner = (<p>Player Turn: {turn}</p>)
 
     if(winner){
-        turnWinner = <p>Test Change WINNER!!!</p>
+        turnWinner = <p>WINNER!!!</p>
     }  
 
     return(
@@ -23,7 +23,3 @@ const GameBoard = ({gameButtons, onClick, turn, winner}) => {
 }
 
 export default GameBoard
-
-
-
-
