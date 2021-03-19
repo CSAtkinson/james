@@ -5,7 +5,8 @@
     padding-top: 50px;
     font-weight: bold;
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
+    vertical-align: middle; 
 }
 
 .Button{
@@ -20,19 +21,21 @@
 
 .outerDiv{
     padding-top: 100px;
-    display: flex;
     flex-direction: row;
     height: 360px;
     padding: 0px;
-    margin: 0px; 
+    margin: 0px;
+    vertical-align: middle;
+    display: flex;
 }
 
 .emptyDiv{
     display: inline-block;
     width: 33.3%;
     height: 400px;
-    padding: 0px;
-    margin: 0px; 
+    padding-top: 100px; 
+    vertical-align: middle;
+    text-align: center;
 }
 
 
